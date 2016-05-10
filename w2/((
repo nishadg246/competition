@@ -1,0 +1,22 @@
+((
+(A ={A2} AND {A2}<>"") 
+
+OR {A2}="")
+
+ AND   B = {B2} AND {B2}="Yes")
+
+
+OR 
+(((A ={A2} AND {A2}<>"") OR {A2}="")
+ AND   ISNULL(B,"")="" AND {B2}="No")
+
+OR 
+
+(((A ={A2} AND {A2}<>"") OR {A2}="")
+ AND    {B2}="")
+
+
+ path_results_grid_.txt_send_to_specimen = A
+ gi_intraprocedure_.txt_specimen_send_to_filter = A2
+ path_results_grid_.txt_specimen_ordered_status = B
+ local.txt_specimen_ordered_filter_1 = B2
